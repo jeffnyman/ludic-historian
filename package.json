@@ -11,5 +11,11 @@
     "ludology",
     "narratology"
   ],
-  "main": "public/index.html"
+  "main": "public/index.html",
+  "scripts": {
+    "start": "copyfiles -u 1 \"./src/**/*.html\" public"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
+  }
 }
