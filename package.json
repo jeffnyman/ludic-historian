@@ -15,6 +15,7 @@
   "scripts": {
     "copy:assets": "copyfiles -u 1 \"./src/assets/**/*\" public",
     "copy:html": "copyfiles -u 1 \"./src/**/*.html\" public",
+    "copy:site": "copyfiles -u 1 \"./src/browserconfig.xml\" \"./src/site.webmanifest\" public",
     "watch:assets": "onchange \"./src/assets/**/*\" -- npm run copy:assets",
     "watch:html": "onchange \"./src/**/*.html\" -- npm run copy:html",
     "start": "npm-run-all --parallel copy:* watch:*",
