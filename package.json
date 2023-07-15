@@ -1,0 +1,14 @@
+{
+  "name": "@jeffnyman/ludic-historian",
+  "author": "Jeff Nyman",
+  "version": "0.1.0",
+  "description": "A Game Historian's View of Ludic Ambient Heuristics",
+  "license": "CC BY-SA 4.0",
+  "keywords": [
+    "history",
+    "gaming",
+    "computing",
+    "ludology",
+    "narratology"
+  ]
+}
