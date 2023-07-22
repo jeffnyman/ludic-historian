@@ -57,3 +57,71 @@
 html {
   color-scheme: light dark;
 }
+
+::marker {
+  color: var(--clr-primary);
+}
+
+::selection {
+  color: var(--clr-surface);
+  background: var(--clr-text);
+}
+
+:target {
+  // Allows for padding above anchor links.
+  scroll-padding-block-start: 2rem;
+}
+
+:focus {
+  // Allows for room between a focused element and the bottom of
+  // the viewport.
+  scroll-padding-block-end: 8vh;
+}
+
+:focus-visible {
+  --outline-size: max(2px, 0.15em);
+
+  outline: var(--outline-width, var(--outline-size)) var(--outline-style, solid)
+    var(--outline-color, currentColor);
+  outline-offset: var(--outline-offset, var(--outline-size));
+}
+
+// Animate focus outline for users that have not indicated a
+// preference for reduced motion.
+@media (prefers-reduced-motion: no-preference) {
+  :focus-visible {
+    transition: outline-offset 145ms cubic-bezier(0.25, 0, 0.4, 1);
+  }
+
+  :where(:not(:active)):focus-visible {
+    transition-duration: 0.25s;
+  }
+}
+
+// Use smooth scrolling for users that have not indicated
+// a preference for reduced motion.
+@media (prefers-reduced-motion: no-preference) {
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+}
+
+// Default to jump scroll and remove animation elements for
+// users that indicated a preference for reduced motion.
+@media (prefers-reduced-motion: reduce), (update: slow) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0s !important;
+    transition-duration: 0s !important;
+  }
+}
