@@ -44,6 +44,12 @@
   font-display: swap;
 }
 
+:root {
+  --ff-base: "Montserrat", sans-serif;
+  --ff-base-italic: "Montserrat Italic", sans-serif;
+  --ff-heading: "Kyiv Sans", sans-serif;
+}
+
 *,
 *::before,
 *::after {
