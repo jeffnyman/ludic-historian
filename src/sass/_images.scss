@@ -1,0 +1,51 @@
+@use "./root";
+
+img {
+  display: block;
+
+  // Images should center by default.
+  margin: 0 auto;
+
+  // Make sure images don't exceed their container width.
+  max-inline-size: 100%;
+  max-block-size: 100%;
+
+  &.prop30 {
+    width: 30%;
+  }
+
+  &.prop50 {
+    width: 50%;
+  }
+
+  &.prop70 {
+    width: 70%;
+  }
+
+  &.circle {
+    border-radius: 50%;
+    border: 1px solid #000;
+  }
+
+  &.backframed {
+    margin: 0 auto;
+    border: 3px solid black;
+    box-shadow: -50px -50px 0 -40px #555555, 50px 50px 0 -40px #555555;
+  }
+
+  &.framed {
+    --b: 10px;
+
+    margin: 0 auto;
+    padding: var(--b);
+    border: calc(2 * var(--b)) solid #0000;
+    border-radius: 25px;
+    outline: 1px solid var(--clr-text);
+    outline-offset: calc(-1 * var(--b));
+    background: conic-gradient(
+      from 90deg at 1px 1px,
+      #0000 90deg,
+      var(--clr-text) 0
+    );
+  }
+}
