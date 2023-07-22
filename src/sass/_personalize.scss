@@ -1,0 +1,59 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("../assets/fonts/Montserrat.woff2") format("woff2"),
+    url("../assets/fonts/Montserrat.woff") format("woff");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat Italic";
+  src: url("../assets/fonts/Montserrat-Italic.woff2") format("woff2"),
+    url("../assets/fonts/Montserrat-Italic.woff") format("woff");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans.woff2") format("woff2"),
+    url("../assets/fonts/OpenSans.woff") format("woff");
+  font-weight: 300 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans Italic";
+  src: url("../assets/fonts/OpenSans-Italic.woff2") format("woff2"),
+    url("../assets/fonts/OpenSans-Italic.woff") format("woff");
+  font-weight: 300 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kyiv Sans";
+  src: url("../assets/fonts/KyivTypeSans.woff2") format("woff2"),
+    url("../assets/fonts/KyivTypeSans.woff") format("woff");
+  font-weight: 0 1000;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+:where(html, body) {
+  overscroll-behavior-y: none;
+}
+
+html {
+  color-scheme: light dark;
+}

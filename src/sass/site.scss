@@ -1,86 +1,9 @@
+@use "./personalize";
+@use "./root";
+
 /* Multi-line comment (in css) */
 
 // Single line comment (won't be in css)
-
-@font-face {
-  font-family: Montserrat;
-  src: url("../assets/fonts/Montserrat.woff2") format("woff2"),
-    url("../assets/fonts/Montserrat.woff") format("woff");
-  font-weight: 100 900;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat Italic";
-  src: url("../assets/fonts/Montserrat-Italic.woff2") format("woff2"),
-    url("../assets/fonts/Montserrat-Italic.woff") format("woff");
-  font-weight: 100 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../assets/fonts/OpenSans.woff2") format("woff2"),
-    url("../assets/fonts/OpenSans.woff") format("woff");
-  font-weight: 300 800;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Open Sans Italic";
-  src: url("../assets/fonts/OpenSans-Italic.woff2") format("woff2"),
-    url("../assets/fonts/OpenSans-Italic.woff") format("woff");
-  font-weight: 300 800;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Kyiv Sans";
-  src: url("../assets/fonts/KyivTypeSans.woff2") format("woff2"),
-    url("../assets/fonts/KyivTypeSans.woff") format("woff");
-  font-weight: 0 1000;
-  font-display: swap;
-}
-
-:root {
-  --ff-base: "Montserrat", sans-serif;
-  --ff-base-italic: "Montserrat Italic", sans-serif;
-  --ff-heading: "Kyiv Sans", sans-serif;
-  --fs-300: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
-  --fs-400: clamp(1.35rem, calc(1.2rem + 0.73vw), 1.77rem);
-  --fs-500: clamp(1.62rem, calc(1.31rem + 1.53vw), 2.5rem);
-  --fs-600: clamp(1.94rem, calc(1.39rem + 2.77vw), 3.53rem);
-  --fs-700: clamp(2.33rem, calc(1.41rem + 4.63vw), 5rem);
-  --fs-800: clamp(2.8rem, calc(1.32rem + 7.42vw), 7.07rem);
-  --fs-900: clamp(3.36rem, calc(1.05rem + 11.53vw), 9.99rem);
-  --clr-body: hsl(204deg 20% 25%);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --clr-body: hsl(204deg 20% 75%);
-  }
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-}
-
-:where(html, body) {
-  overscroll-behavior-y: none;
-}
-
-html {
-  color-scheme: light dark;
-}
 
 body {
   font-family: var(--ff-base);
