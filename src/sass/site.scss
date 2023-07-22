@@ -88,3 +88,8 @@ body {
   color: var(--clr-body);
   line-height: 1.6;
 }
+
+main {
+  margin-inline: auto;
+  width: min(55ch, 100% - 4rem);
+}
