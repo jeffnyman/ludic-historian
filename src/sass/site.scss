@@ -43,3 +43,21 @@
   font-weight: 0 1000;
   font-display: swap;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+:where(html, body) {
+  overscroll-behavior-y: none;
+}
+
+html {
+  color-scheme: light dark;
+}
