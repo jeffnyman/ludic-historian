@@ -78,3 +78,23 @@ a:not([class]) {
 li {
   margin-bottom: 1em;
 }
+
+pre {
+  width: 70%;
+  font-size: 0.8em;
+  padding-left: 10px;
+
+  code {
+    font-family: var(--mono);
+    word-spacing: normal;
+    letter-spacing: normal;
+  }
+
+  div {
+    white-space: pre-wrap;
+    white-space: -moz-re-wrap !important;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+  }
+}
