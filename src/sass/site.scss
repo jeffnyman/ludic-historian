@@ -55,6 +55,13 @@
   --fs-700: clamp(2.33rem, calc(1.41rem + 4.63vw), 5rem);
   --fs-800: clamp(2.8rem, calc(1.32rem + 7.42vw), 7.07rem);
   --fs-900: clamp(3.36rem, calc(1.05rem + 11.53vw), 9.99rem);
+  --clr-body: hsl(204deg 20% 25%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --clr-body: hsl(204deg 20% 75%);
+  }
 }
 
 *,
@@ -78,5 +85,6 @@ html {
 body {
   font-family: var(--ff-base);
   font-size: var(--fs-400);
+  color: var(--clr-body);
   line-height: 1.6;
 }
