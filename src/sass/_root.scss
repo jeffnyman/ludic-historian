@@ -2,6 +2,7 @@
   --ff-base: "Montserrat", sans-serif;
   --ff-base-italic: "Montserrat Italic", sans-serif;
   --ff-heading: "Kyiv Sans", sans-serif;
+  --ff-accent: "Open Sans", sans-serif;
   --fs-300: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
   --fs-400: clamp(1.35rem, calc(1.2rem + 0.73vw), 1.77rem);
   --fs-500: clamp(1.62rem, calc(1.31rem + 1.53vw), 2.5rem);
@@ -11,11 +12,21 @@
   --fs-900: clamp(3.36rem, calc(1.05rem + 11.53vw), 9.99rem);
   --clr-body: hsl(204deg 20% 25%);
   --clr-text: hsl(204deg 100% 1%);
+  --clr-surface: hsl(0deg 0% 100%);
+  --clr-primary: hsl(329deg 85% 53%);
+  --clr-secondary: hsl(208deg 83% 93%);
+  --clr-accent: hsl(89deg 85% 33%);
+  --mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --clr-body: hsl(204deg 20% 75%);
     --clr-text: hsl(0deg 0% 100%);
+    --clr-surface: hsl(204deg 100% 1%);
+    --clr-primary: hsl(329deg 85% 53%);
+    --clr-secondary: hsl(208deg 83% 17%);
+    --clr-accent: hsl(89deg 85% 33%);
   }
 }
