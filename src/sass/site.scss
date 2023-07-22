@@ -44,3 +44,20 @@ hr {
   max-inline-size: 100%;
   max-inline-size: min(55rem, 100%);
 }
+
+blockquote {
+  position: relative;
+  margin-right: 2em;
+  margin-left: 2em;
+  border-left: 8px solid var(--clr-primary);
+  padding: 1.2em 1.875em 1.2em 2.68em;
+
+  &::before {
+    position: absolute;
+    content: "\201C";
+    color: var(--clr-primary);
+    left: 10px;
+    top: -10px;
+    font-size: 4em;
+  }
+}
