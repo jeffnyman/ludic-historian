@@ -61,3 +61,20 @@ blockquote {
     font-size: 4em;
   }
 }
+
+p,
+li,
+blockquote {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+a:not([class]) {
+  // Relatively sized thickness and offset.
+  text-decoration-thickness: max(0.08em, 1px);
+  text-underline-offset: 0.25em;
+}
+
+li {
+  margin-bottom: 1em;
+}
