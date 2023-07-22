@@ -112,3 +112,10 @@ hr {
     rgba(0 0 0 / 0%)
   );
 }
+
+:where(img, picture, svg, video) {
+  display: block;
+  block-size: auto;
+  max-inline-size: 100%;
+  max-inline-size: min(55rem, 100%);
+}
