@@ -101,3 +101,33 @@ The chasm section of the map is missing, and the portion of the map is marked wi
 adv-lebling-full-map.jpg
 
 It's worth noting that there aren’t a lot of differences here, other than the disconnect with the Hall of the Mountain King and that the maze of passages is absent. If you slice away the two treasures past the chasm (the golden chain and the spices) and cut the endgame (it also doesn’t show on the map), you get around 244 points. This is quite close to Everett's recollection of approximately 250 points.
+
+The original 350-point version was separately ported in July 1977 by Kent Blackett. We see source code from the period with the following:
+
+```
+ADVENT.FOR: C REV. 17 ADVENTURES MODIFIED BY KENT BLACKETT ENGINEERING SYSTEMS GROUP DIGITAL EQUIPMENT CORP. 15-JUL-77 ORIGINAL VERSION WAS FOR DECSYSTEM-10 THIS VERSION IS FOR FORTRAN IV-PLUS UNDER THE IAS OPERATING SYSTEM ON THE PDP-11/70.
+```
+
+This is followed by the work of Bob Supnik, circa October (date given in his source code). It has 366 maximum points, and the cumulative efforts of Blackett and Supnik (probably) represent the first modification of the game past the Woods version.
+
+Regarding the source code itself, from Jerz’s paper:
+
+> In response to my request, Les Earnest ([Stanford Artificial Intelligence Lab] executive officer, 1965-1980), Bruce Baumgart (former Stanford Ph.D. student, now an employee of the Internet Archive) and Martin Frost (systems manager of Stanford's CS department) kindly gave Don Woods web-based access to a tape backup of his Stanford student account. Woods chose five files from that backup tape, which he identified as components of Crowther's original FORTRAN 4 source code, and made them available for scholarly study.
+
+There are two specific files representing the data and the code, and they are dated 11 March 1977. According to Woods, these files represent Crowther’s original work. That archive includes three more files from later that same year in March. These show some of the first changes Woods made in the data and the code.
+
+A question often gets asked: was “Adventure” influenced by anything? If we go back to the interview, Crowther is specifically asked: “When you guys were building the original network [Arpanet], did you have any games that you played to relieve any of the pressure?” His response:
+
+> The thing I did was rock climbing. I started rock climbing in '56 and have been doing it ever since.
+
+He never really mentions any game at all although he does mention Dungeons & Dragons.
+
+There is a record of one earlier dungeon-crawling game called “dnd”, written in 1974-75 on the PLATO system at the University of Illinois. This was in some ways similar to later roguelike games but not at all similar to “Adventure.” The designers of later roguelikes frequently cite “Adventure” as an influence but not “dnd.” Thus, like PLATO itself, “dnd” seems not to have become known outside of its user community until rediscovered by computer historians many years after “Adventure” became widely available. So, this doesn’t seem to be an influence at all.
+
+There was also _Hunt The Wumpus_, written by Gregory Yob in 1972. There is no evidence that Yob’s original (circulated in BASIC among microcomputer enthusiasts) was known to the ARPANET and minicomputer-centered culture that Crowther and Woods were part of until well after “Adventure” was written.
+
+Neither of these games used an attempt at a natural-language parser even as primitive as the one used in “Adventure.” It’s possible that _Wander_ was earlier, but very few people were aware of it historically and there's a great deal of question around that earlier status.
+
+In terms of impact, it’s certainly the case that some version of “Adventure” was played by Scott Adams, by the Zork team, and by Sierra co-founder Roberta Williams. One of these versions formed the basis of Microsoft Adventure, perhaps the first IBM PC game ever released. As shown above, there exists an original Crowther version, and there is without doubt an original Woods version based on its final revisions, and those can be quite accurately dated. Thus it can be argued that the original Woods version is the template and namesake of the entire commercial text adventure genre.
+
+Gordon Letwin made a 350 point version available by August 1978. It was the first version available on a personal computer, specifically the Heath. It was not a literal port. I have the file (885-1010_Adventure.h8d) but I'm not sure how much you can actually do with it. The source of the file was from [SEBHC.ORG archive page](https://sebhc.github.io/sebhc/software.html), specifically the "SEBHC Complete Set Volume 1" application archive.
