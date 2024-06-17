@@ -8,9 +8,9 @@ Project Solo was initially formed as part of the Special Interest Group on Compu
 
 Dwyer published the inception document for the project in the society's newsletter _Interface_ (volume 4, issue 1) in February 1970. This document is titled "Project Solo: A Statement of Position Regarding CAI and Creativity," where "CAI" refers to "Computer-Assisted Instruction."
 
-The context was that "each student as a creative person who can learn to use the computer as an exploratory tool" and that this idea was "in contrast to a programmed learning type of CAI which guides the student in pre-determined patterns."
-
 project-solo-inception.pdf
+
+The context was that any given student was treated as "a creative person who can learn to use the computer as an exploratory tool" and that this idea was "in contrast to a programmed learning type of CAI which guides the student in pre-determined patterns."
 
 Dwyer characterized educational programming as having two modes: dual and solo. The "Project Solo" name was meant to reference the transition of a pilot learning to fly, going from "dual flying" with an instructor to "solo flying" alone.
 
@@ -24,13 +24,15 @@ A technology focus was clearly the driving factor. The project ultimately envisi
 
 project-solo-lunar-lander-expand-computers.jpg
 
-One such idea, expressed in the above image, was that of a lunar lander that might present an actual visual user interface. Behind the scenes, that interface is driven by a series of mathematical calculations. The mathematical underpinning of this was quite crucial. The Solo project came to focus on the "critical transitional period in math education."
+One such idea, expressed in the above image, was that of a lunar lander that might present an actual visual user interface. Behind the scenes, that interface is driven by a series of mathematical calculations. The mathematical underpinning of this was quite crucial. The Solo Works project came to focus on the "critical transitional period in math education."
 
 soloworks-transitional-math.jpg
 
-This focus on mathematics will be interesting when we consider some of the initial games and simulations we look at here.
+This focus on mathematics will be interesting when we consider some of the initial games and simulations we look at here. Specifically, how the idea of simulation and game may have been conflated and how the purpose was often pedagogical, whether for math or logic, yet still situated in the context of a ludic experience. These ludic experiences tended to have a narrative component to them as well.
 
-In early 1970, after the inception document was published, a paper written by Thomas Dwyer was published called "Some Principles for the Human Use of Computers in Education."
+NOTE: Good examples to consider here that pre-date what I'm about to talk about would be The Sumerian Game (1964, 1968), High Noon (1970), The Oregon Trail (1971), and ELIZA (1964). None of these seemed to have been known about by the people participating in the early education projects, at least at the start of them. If those projects were known about, they were not referenced at all.
+
+In early 1970, after the inception document, a paper written by Thomas Dwyer was published called "Some Principles for the Human Use of Computers in Education."
 
 project-solo-no-01-ERIC-ED053566.pdf
 
@@ -46,9 +48,13 @@ The emphasis there is mine. The idea of games and simulations was important as i
 
 project-solo-learning-as-game.jpg
 
+Here the study of volume and weight were situated in the context of "Willy Wizbang." Of note is that students are told they will be asked to write a similar such "adventure program."
+
 Further, in issue 22 of the newsletter, from June 1972, we read the following:
 
 > Distinctions can be made between games and simulations, although the programs students write in these areas often combine both concepts. The real fun begins when students modify, or better yet create the programs behind simulations and games. For this reason, we believe that listings of such programs should always be furnished to students.
+
+The idea of modifications, or variants, of existing programs as well as the idea of providing such listings as a way to not only see the original implementation but allow the creation of the variant was crucial for what would later be an emerging trend in magazines like _Creative Computing_.
 
 ## Hiding and Seeking
 
