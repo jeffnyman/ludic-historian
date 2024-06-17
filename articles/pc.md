@@ -226,7 +226,7 @@ and   how to buy a microcomputer for yourself or your school
 and   books ... and films ... and tools for the future.
 ```
 
-peoples-computer-company-initial.jpg
+peoples-computer-company-initial1.jpg
 
 Notice that this is referring to the People's Computer Company, which again was the newsletter. There's also a bit about that People's Computer Center.
 
@@ -238,6 +238,8 @@ is a place
 ... a place to play with computers at modest prices.
 ... a place to learn how to use computers.
 ```
+
+peoples-computer-company-initial2.jpg
 
 Also worth considering is a descriptive blurb for the PCC.
 
@@ -253,6 +255,6 @@ Computers are mostly
     PEOPLE'S COMPUTER COMPANY
 ```
 
-peoples-computer-company-initial2.jpg
+peoples-computer-company-initial3.jpg
 
 There are some noticeable tonal differences between the self-descriptions looked at so far but the overall emphasis was clear: the democratization of the computing experience. Regarding that democratization, an important context is that, at the time, the only feasible way to use a computer was to be associated with a large institution like a university or have the good fortune to attend a K-12 school with access.
