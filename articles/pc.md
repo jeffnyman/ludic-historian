@@ -8,9 +8,13 @@ Project Solo was initially formed as part of the Special Interest Group on Compu
 
 Dwyer published the inception document for the project in the society's newsletter _Interface_ (volume 4, issue 1) in February 1970. This document is titled "Project Solo: A Statement of Position Regarding CAI and Creativity," where "CAI" refers to "Computer-Assisted Instruction."
 
+The context was that "each student as a creative person who can learn to use the computer as an exploratory tool" and that this idea was "in contrast to a programmed learning type of CAI which guides the student in pre-determined patterns."
+
 project-solo-inception.pdf
 
 Dwyer characterized educational programming as having two modes: dual and solo. The "Project Solo" name was meant to reference the transition of a pilot learning to fly, going from "dual flying" with an instructor to "solo flying" alone.
+
+NOTE: There is a great deal of context to Project Solo in relation to the idea of computing being used to enhance education. This is something I'll cover separately.
 
 At the end of 1973, Project Solo transformed and reemerged as Solo Works (sometimes written as "Soloworks"). The new project, officially titled "A Computer-Based High School Mathematics Laboratory," described itself in issue 23 of the Project Solo newsletter, which was published in November 1973.
 
@@ -26,7 +30,7 @@ soloworks-transitional-math.jpg
 
 This focus on mathematics will be interesting when we consider some of the initial games and simulations we look at here.
 
-In early 1970, after the inception document was published, a paper written by Thomas Dwyer was published that was called "Some Principles for the Human Use of Computers in Education."
+In early 1970, after the inception document was published, a paper written by Thomas Dwyer was published called "Some Principles for the Human Use of Computers in Education."
 
 project-solo-no-01-ERIC-ED053566.pdf
 
@@ -196,3 +200,53 @@ It might seem odd to focus so much attention on what was such a simple program, 
 Another reason I focus on this very early game is that this provides an entry point into considering the barest hint of topographical style games that would, ultimately, lead to the concept of the “adventure game,” even though that was never a plan at this (or, really, any) stage and the path itself certainly wasn’t a direct linear one. The _Hide and Seek_ game would be referenced again as at least an inspiration of sorts for the next stage of games I will consider.
 
 NOW WE HAVE TO INTRO PCC
+
+# Starting People's Computing
+
+The People's Computer Company (PCC) was founded by Bob Albrecht, along with some others, in Menlo Park, California in the 1970s. In October of 1972, a large-format bimonthly newsprint publication was created called "People's Computer Company." In that first issue, the founders described the PCC as a "place to play with computers" and to "learn how to use computers."
+
+The PCC took on the mission of extending access to computers and to bring "computers to the people." The newsletter played an important role in that mission, putting a focus on computer games, computer education, and promotion of the BASIC programming language.
+
+NOTE: The name of the newsletter changed to "People's Computers" beginning with the May-June 1977 issue and the format changed to a more conventional magazine style. The name of the newsletter changed again to "Recreational Computing" with Jan-Feb 1979 issue.
+
+Let's consider how the newsletter branded itself in the latter part of 1972.
+
+```
+THE PEOPLE'S COMPUTER COMPANY
+is a newspaper ...
+about having fun with computers
+and   learning how to use computers
+and   how to buy a microcomputer for yourself or your school
+and   books ... and films ... and tools for the future.
+```
+
+peoples-computer-company-initial.jpg
+
+Notice that this is referring to the People's Computer Company, which again was the newsletter. There's also a bit about that People's Computer Center.
+
+```
+PEOPLE'S COMPUTER CENTER
+
+is a place
+... a place to do the things the People's Computer Company talks about.
+... a place to play with computers at modest prices.
+... a place to learn how to use computers.
+```
+
+Also worth considering is a descriptive blurb for the PCC.
+
+```
+Computers are mostly
+
+   used against people instead of for people
+   used to control people instead of to <ins>free</ins> them
+
+       time to change all that -
+          we need a ...
+
+    PEOPLE'S COMPUTER COMPANY
+```
+
+peoples-computer-company-initial2.jpg
+
+There are some noticeable tonal differences between the self-descriptions looked at so far but the overall emphasis was clear: the democratization of the computing experience. Regarding that democratization, an important context is that, at the time, the only feasible way to use a computer was to be associated with a large institution like a university or have the good fortune to attend a K-12 school with access.
