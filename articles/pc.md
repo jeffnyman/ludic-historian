@@ -219,7 +219,7 @@ The People's Computer Company (PCC) was founded by Bob Albrecht, along with some
 
 The PCC took on the mission of extending access to computers and to bring "computers to the people." The newsletter played an important role in that mission, putting a focus on computer games, computer education, and promotion of the BASIC programming language.
 
-NOTE: The name of the newsletter changed to "People's Computers" beginning with the May-June 1977 issue and the format changed to a more conventional magazine style. The name of the newsletter changed again to "Recreational Computing" with Jan-Feb 1979 issue.
+NOTE: The name of the newsletter changed to "People's Computers" beginning with the May-June 1977 issue and the format changed to a more conventional magazine style. The name of the newsletter changed again to "Recreational Computing" with the Jan-Feb 1979 issue.
 
 Let's consider how the newsletter branded itself in the latter part of 1972.
 
@@ -263,4 +263,24 @@ Computers are mostly
 
 peoples-computer-company-initial3.jpg
 
-There are some noticeable tonal differences between the self-descriptions looked at so far but the overall emphasis was clear: the democratization of the computing experience. Regarding that democratization, an important context is that, at the time, the only feasible way to use a computer was to be associated with a large institution like a university or have the good fortune to attend a K-12 school with access.
+There are some noticeable tonal differences between the self-descriptions looked at so far but the overall emphasis was clear: the democratization of the computing experience. Regarding that democratization, an important context is that, at the time, the only feasible way to use a computer was to be associated with a large institution like a university or have the good fortune to attend a K-12 school with access to a time-sharing network.
+
+The same newsletter as the above initial statements of purpose also describe the operating context for the center:
+
+> We have a small, friendly computer - a DEC EduSystem 20 with two terminals - a TTY with an acoustic coupler so we can talk to an HP 2000C - some electronic calculators - a programmable toy car - games - book to help you learn and ... we run after school workshops for kids 9 years and up, and evening open classrooms for anyone who wants to participate. We also sell raw computer time for $2 per hour for an EduSystem 20 terminal running in BASIC.
+
+Throughout the newsletters, you will see mention of the EduSystems. These were "educational computer systems" made by the Digital Equipment Corporation. Engineers built these systems around the PDP-8 and PDP-11 minicomputers. In the various PCC newsletters, you see many references in the literature to Edu 5, Edu 10, Edu 20, and so forth.
+
+Edu 25, for example, was a time-sharing system that allowed up to eight users, all using BASIC. The Edu 25 was an Edu 20 with sixteen kilobyte words of memory and two "DECtapes." DECtapes were magnetic tapes on five-inch reels, each of which could store up to 188,672 words. The December issue of the PCC newsletter had an article called "Terminal Terminology" that provided some excellent context.
+
+pcc-v1-n2-dec-1972-teletype-context.pdf
+
+One very relevant point to understand is that the People's Computer Center was a physical space, and it was open enough that its audience ran from young children up to adults. Games in the center could be targeted at one, neither, or both. But most of those games were, in fact, in BASIC.
+
+In the May 1973 issue of the PCC newsletter, there was some good context about how the PCC was being written about in the press.
+
+pcc-v1-n5-may-1973-press.pdf
+
+It was the PCC newsletter that was the primary form of outreach for the group, and it's the one that lets us dig into some of the history. Undoubtedly, the People's Computer Company highlighted the crucial role of DEC, HP, and their minicomputer time-sharing systems in spreading computing and BASIC during the late 1960s and early 1970s.
+
+Consider, for example, how the EduSystem context was a "minicomputer." Personal computers weren't an option yet as none existed until 1975. That said, we do have to make allowances for what "personal computer" meant, distinguishing from one you could have at home versus one you could use "personally" in a classroom or other setting.
