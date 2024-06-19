@@ -12,6 +12,8 @@ project-solo-inception.pdf
 
 The context was that any given student was treated as "a creative person who can learn to use the computer as an exploratory tool" and that this idea was "in contrast to a programmed learning type of CAI which guides the student in pre-determined patterns."
 
+NOTE: The idea of CAI has an interesting history that I will cover elsewhere. The short version is that it was promoted as a way to enhance education but was found to be largely the exact opposite.
+
 Dwyer characterized educational programming as having two modes: dual and solo. The "Project Solo" name was meant to reference the transition of a pilot learning to fly, going from "dual flying" with an instructor to "solo flying" alone.
 
 NOTE: There is a great deal of context to Project Solo in relation to the idea of computing being used to enhance education. This is something I'll cover separately.
@@ -30,7 +32,7 @@ soloworks-transitional-math.jpg
 
 This focus on mathematics will be interesting when we consider some of the initial games and simulations we look at here. Specifically, how the idea of simulation and game may have been conflated and how the purpose was often pedagogical, whether for math or logic, yet still situated in the context of a ludic experience. These ludic experiences tended to have a narrative component to them as well.
 
-NOTE: Good examples to consider here that pre-date what I'm about to talk about would be The Sumerian Game (1964, 1968), High Noon (1970), The Oregon Trail (1971), and ELIZA (1964). None of these seemed to have been known about by the people participating in the early education projects, at least at the start of them. If those projects were known about, they were not referenced at all.
+NOTE: Good examples to consider here that pre-date what I'm about to talk about would be The Sumerian Game (1964, 1968), High Noon (1970), The Oregon Trail (1971), and ELIZA (1964). None of these seemed to have been known about by the people participating in the early education projects, at least at the start of them. If those examples were known about, they were not referenced at all. I will talk about all of those separately.
 
 In early 1970, after the inception document, a paper written by Thomas Dwyer was published called "Some Principles for the Human Use of Computers in Education."
 
@@ -54,21 +56,21 @@ Further, in issue 22 of the newsletter, from June 1972, we read the following:
 
 > Distinctions can be made between games and simulations, although the programs students write in these areas often combine both concepts. The real fun begins when students modify, or better yet create the programs behind simulations and games. For this reason, we believe that listings of such programs should always be furnished to students.
 
-The idea of modifications, or variants, of existing programs as well as the idea of providing such listings as a way to not only see the original implementation but allow the creation of the variant was crucial for what would later be an emerging trend in magazines like _Creative Computing_.
+The idea of modifications, or variants, of existing programs as well as the idea of providing such listings as a way to not only see the original implementation but allow the creation of the variant was crucial for what would later be an emerging trend in magazines like _Creative Computing_. The entire adventure game industry that was to come was effectively all about variants.
 
 ## Hiding and Seeking
 
-In fact, issue 22 of the Project Solo newsletter has another interesting focus. Specifically on the mention of “four computer games: hide-and-seek, NIM, MODULO, and space war.”
+In fact, issue 22 of the Project Solo newsletter has another interesting focus. Specifically on the mention of "four computer games: hide-and-seek, NIM, MODULO, and space war."
 
 project-solo-announce-modules-jun-1972-issue-22.jpg
 
-I want to focus on _Hide and Seek_, also known as “Project Solo module #201” as this will start us down an interesting path. That path shows some common threads as a particular style of game -- text-based adventure games -- came on the scene. First, check out the Hide and Seek program description and listing from the newsletter.
+I want to focus on _Hide and Seek_, also known as “Project Solo module #201” as this will start us down an interesting path. That path shows some common threads as a particular style of game -- text-based adventure games -- came on the scene. First, check out the _Hide and Seek_ program description and listing from the newsletter.
 
 project-solo-hide-and-seek.pdf
 
 ### Implementation
 
-We don’t know the exact author but the article tells us that the _Hide and Seek_ program was written in BASIC for the PDP-10. You can see the original Hide and Seek source code.
+We don’t know the exact author but the article tells us that the _Hide and Seek_ program was written in BASIC for the PDP-10. You can see the original _Hide and Seek_ source code.
 
 hideseek-original.bas
 
@@ -85,11 +87,11 @@ Now let's dig into this very early progenitor.
 
 ### Ludic Experience
 
-As the game instructions print out, the goal is to “FIND THE FOUR PLAYERS WHO ARE HIDDEN ON A 10 BY 10 GRID.” The game gives the player ten guesses to find these other players. It’s worth noting that these are fictional players, not actual game players. No multiplayer quite yet! Those players are nothing more than point locations on a grid.
+As the game instructions print out, the goal is to "FIND THE FOUR PLAYERS WHO ARE HIDDEN ON A 10 BY 10 GRID." The game gives the player ten guesses to find these other players. It’s worth noting that these are fictional players, not actual game players. No multiplayer quite yet! Those players are nothing more than point locations on a grid.
 
-The ludic experience here is that with each guess, the player picks a point on the grid, and then the program will indicate the distances to each hidden player. If the player’s guess matches precisely the location of a hidden player, then they get credit for finding that “person.”
+The ludic experience here is that with each guess, the player picks a point on the grid, and then the program will indicate the distances to each hidden player. If the player’s guess matches precisely the location of a hidden player, then they get credit for finding that "person."
 
-The player doesn’t see the grid displayed as part of the game but the game gives you some idea of the concept.
+The player doesn't see the grid displayed as part of the game but the game gives you some idea of the concept.
 
 ```
 HOMEBASE WILL BE THE POSITION AT (0,0) AND ANY GUESS
@@ -104,9 +106,9 @@ hide-and-seek-grid.jpg
 
 While the Project Solo article gives an example play session, I think it might be instructive to walk through one to show the ludic experience and also talk about the strategy. The article mentions “triangulation” and that does seem to make some sense. Another strategy that seems to make sense is trilatertion.
 
-NOTE: Triangulation is a method used to determine the location of a point by measuring angles. Trilateration, on the other hand, determines the position of a point by measuring distances, not angles.
+NOTE: Triangulation is a method used to determine the location of a point by measuring angles. Trilateration, on the other hand, determines the position of a point by measuring distances, not angles. Both approaches would have some efficacy here.
 
-Here is how things started for me.
+Here's how things started for me.
 
 ```
 TURN NUMBER 1 , WHAT IS YOUR GUESS?
@@ -117,7 +119,7 @@ YOUR DISTANCE FROM PLAYER 3 IS 5 UNIT(S).
 YOUR DISTANCE FROM PLAYER 4 IS 3 UNIT(S).
 ```
 
-At the prompt you can see I chose `3,3` as a starting point. You can see the distance of the players from the point I chose. It’s helpful to focus on finding one player at a time. Thus one strategy that immediately suggests itself is to draw a circle of radius 1.4 with a center at `3,3`.
+At the prompt you can see I chose `3,3` as a starting point. The program then displays the distance of the players from the point I chose. It doesn't take too much strategic thinking to realize that it's likely best to focus on finding one player at a time. Thus one strategy that immediately suggests itself is to draw a circle of radius 1.4 with a center at `3,3`.
 
 hide-and-seek-play-001.jpg
 
@@ -132,11 +134,13 @@ YOUR DISTANCE FROM PLAYER 3 IS 2 UNIT(S).
 YOUR DISTANCE FROM PLAYER 4 IS 5.6 UNIT(S).
 ```
 
-At this point, the game responds that the first player is 5.3 units away from the new point I tried. So, employing the same strategy as before, I now draw a circle of radius 5.3 units away from `7,2`.
+At this point, the program responds that the first player is 5.3 units away from the new point I tried. So, employing the same strategy as before, I now draw a circle of radius 5.3 units away from `7,2`.
 
 hide-and-seek-play-002.jpg
 
-By doing this, I’m effectively narrowing down the potential location of Player 1 even further. The intersection between the circle drawn from the first guess and the circle drawn from the second guess should give me a smaller area where Player 1 is likely “hiding.” This iterative approach of refining my search based on the distances obtained from each guess is an effective way to zero in on the hidden players systematically. In terms of design, this demonstrates a fairly thoughtful use of geometric principles to optimize the search process. Now I can try my third guess.
+By doing this, I’m effectively narrowing down the potential location of Player 1 even further. The intersection between the circle drawn from the first guess and the circle drawn from the second guess should give me a smaller area where Player 1 is likely “hiding.”
+
+This iterative approach of refining my search based on the distances obtained from each guess is an effective way to zero in on the hidden players systematically. In terms of design, this demonstrates a fairly thoughtful use of geometric principles to optimize the search process. Now I can try my third guess.
 
 ```
 TURN NUMBER 3 , WHAT IS YOUR GUESS?
@@ -147,11 +151,11 @@ YOUR DISTANCE FROM PLAYER 3 IS 7.2 UNIT(S).
 YOUR DISTANCE FROM PLAYER 4 IS 2.2 UNIT(S).
 ```
 
-Now, the first player is said to be 4.2 units away from the point I tried. I can thus draw a circle of radius 4.2 units away from `5,7`.
+Now the program indicates the first player is said to be 4.2 units away from the point I tried. I can thus draw a circle of radius 4.2 units away from `5,7`.
 
 hide-and-seek-play-003.jpg
 
-If the mathematical strategy holds, where the three circles intersect must be the exact location where that player “hides.” Here’s the output if I provide that intersection as my fourth guess:
+If the mathematical strategy holds, where the three circles intersect must be the exact location where that player "hides." Here's the output if I provide that intersection as my fourth guess:
 
 ```
 TURN NUMBER 4 , WHAT IS YOUR GUESS?
@@ -168,29 +172,33 @@ With the approach looked at above for the gameplay, what I did was leverage tril
 
 The fact that, in the game, each guess provides information about the distances from the chosen point to all four hidden players is a crucial aspect that supports the soundness of the strategy.
 
+Given this strategy, the fact that the program "originated by students of mathematics teacher, Bud Valenti" likely tells us who the author of the program was, at least in the broad strokes.
+
 Thus we can see how the idea of design provides a particular way of providing a ludic experience. What this suggests is that different designs could provide a different ludic experience.
 
 ### The Idea of Variants
 
 One thing that will come up in my history of early ludic experiences is the idea of variants. This concept means a programmer reworks an existing program, either a lot or a little, to create a variant implementation.
 
-While no student created a variant of the _Hide and Seek_ game in the immediate time frame, at least so far as we know, we can easily imagine a variant. In our hypothetical variant, the game could provide a list of distances to the four hidden players without specifying which distance corresponds to each player. That approach would add an extra layer of complexity and challenge, increasing the difficulty of the game because players would no longer receive explicit information about the identity of each hidden player with each guess. Instead, players would have to infer the associations between the distances and the individual hidden players.
+While no student created a variant of the _Hide and Seek_ game in the immediate time frame, at least so far as we know, we can easily imagine a variant. In our hypothetical variant, the game could provide a list of distances to the four hidden players but _without specifying which distance corresponds to each player_.
 
-With this approach, players would need to develop more sophisticated strategies to infer the relationships between distances and hidden players. That would require more careful analysis and deduction than with the original game. Let’ss consider a few examples of what that would mean.
+That approach would add an extra layer of complexity and challenge, increasing the difficulty of the game because players would no longer receive explicit information about the identity of each hidden player with each guess. Thus, with this approach, players would need to develop more sophisticated strategies to infer the relationships between distances and hidden players. That would require more careful analysis and deduction than with the original game. Let's consider a few examples of what that would mean.
 
-With this approach, keeping track of the distances from each previous turn would become crucial. (Keeping track of things will come up soon in PICO.) Recognizing patterns in the changes in distances would aid the player in making informed decisions in subsequent turns. With each turn, players could iteratively refine their understanding of the hidden players’ locations based on the evolving list of distances. This iterative inference process would add some depth to the gameplay. The absence of direct feedback about the identity of the hidden players would also challenge the player to rely on indirect clues and logical deductions, which would encourage a more strategic and deductive approach. Finally, the trilateration approach mentioned earlier would become more challenging since the distances would have to be associated with specific hidden players, adding complexity to the geometric reasoning in narrowing down the possibilities.
+With this variant approach, keeping track of the distances from each previous turn would become crucial. This is because recognizing patterns in the changes in distances would aid the player in making informed decisions in subsequent turns. With each turn, players could iteratively refine their understanding of the hidden players' locations based on the evolving list of distances.
 
-Overall, this variant could introduce an intriguing challenge requiring deductive reasoning, memory recall, and strategic thinking. It would likely appeal to players who enjoy puzzles with a higher level of complexity and ambiguity than is found in the original game. What you can see here is why it might appeal to a programmer to create a variant in the first place. As the history of early ludic experiences shows, there was a great deal of experimentation around creating variants of games that students or educators made available to the public.
+This iterative inference process would add some depth to the ludic experience. The absence of direct feedback about the identity of the hidden players would also challenge the player to rely on indirect clues and logical deductions, which would encourage a more strategic and deductive approach. Finally, the trilateration approach mentioned earlier would become more challenging since the distances would have to be associated with specific hidden players, adding complexity to the geometric reasoning in narrowing down the possibilities.
 
-NOTE: Consider that Zork was essentially a variant of Adventure. As we later get into the PLATO style RPGs, you’ll find that many of these were a string of variants of each other.
+This kind of variant would likely appeal to players who enjoy puzzles with a higher level of complexity and ambiguity than is found in the original game. What you can see here is why it might appeal to a programmer to create a variant in the first place. As the history of early ludic experiences shows, there was a great deal of experimentation around creating variants of games that students or educators made available to the public.
 
-As with the original design itself, a key design goal of any variant is to balance challenge and enjoyment while keeping the gameplay interesting and engaging. There’s also some onus on the variant being recognizably a variant as opposed to something entirely new.
+NOTE: Consider that Zork was essentially a variant of Adventure. As we later get into the PLATO style RPGs, you'll find that many of these were a string of variants of each other. The game Hammurabi was essentially a variant of The Sumerian Game.
+
+As with the original design itself, a key design goal of any variant is to balance challenge and enjoyment while keeping the ludic experience interesting and engaging. There's also some onus on the variant being recognizably a variant as opposed to something entirely new.
 
 ## Narrative Experience
 
-We looked at the ludic aspects of the game, but what about the narrative? In one sense, this program is nothing more than a mathematical exercise. The opening text for it claims that “this game encourages students to become familiar with the Cartesian Coordinate system.” Yet, even given that focus, the game is situated in the context of the children’s game “Hide and Seek.” As such, that aspect, simple as it may be, does provide the barest hints of a narrative.
+We looked at the ludic aspects of the game, but what about the narrative? In one sense, this program is nothing more than a mathematical exercise. The opening text for it claims that "this game encourages students to become familiar with the Cartesian Coordinate system." Yet, even given that focus, the game is situated in the context of the children’s game "Hide and Seek." As such, that aspect, simple as it may be, does provide the barest hints of a narrative.
 
-The program could have just said, “Find four points on a grid.” Instead, the game says there are “four players” who are “hidden.” Thus, with a bit of imagination, you can imagine that some characters are actively playing with you as part of the game. The instructions to the game also suggest carrying on the “playing a game with others” conceit if you lose.
+This may seem to be stretching a point too far but consider that the program could have just said: "Your gaol is to find four points on a grid." Instead, those four points are modeled as "players" who are "hiding." The instructions to the game also further situate the ludic aspects within the context of this narrative.
 
 ```
 IF AFTER 10 TRIES YOU ARE UNABLE TO CARRY OUT
@@ -199,13 +207,11 @@ PLAYERS WILL BE PERMITTED TO MOVE TO NEW
 LOCATIONS.
 ```
 
-This idea of situating mathematical exercises in a fictional context will reappear in people’s computing. Since, as I argue, people’s computing got started in the educational context, this is not terribly surprising. Many of these programs were created for some pedagogical purpose.
+This idea of situating mathematical exercises in a fictional context will reappear in people's computing, particularly as it intersected with education. Since, as I argue, people’s computing got started in the educational context, this is not terribly surprising. Many of these programs were created for some pedagogical purpose.
 
 It might seem odd to focus so much attention on what was such a simple program, but, as noted above, players _could_ use a strategy and even a better or worse strategy depending on the game’s design. This idea of a strategy is certainly a motif that would dominate many later game design discussions. Further, a programmer could implement a minimal narrative while allowing players to engage with the ludic experience. The game tried to situate its mechanics in the context of a fun game like _Hide and Seek_.
 
-Another reason I focus on this very early game is that this provides an entry point into considering the barest hint of topographical style games that would, ultimately, lead to the concept of the “adventure game,” even though that was never a plan at this (or, really, any) stage and the path itself certainly wasn’t a direct linear one. The _Hide and Seek_ game would be referenced again as at least an inspiration of sorts for the next stage of games I will consider.
-
-NOW WE HAVE TO INTRO PCC
+Another reason I focus on this very early game is that this provides an entry point into considering the barest hint of topographical style games that would, ultimately, lead to the concept of the "adventure game," even though that was never a plan at this (or, really, any) stage and the path itself certainly wasn’t a direct linear one. The _Hide and Seek_ game would be referenced again as at least an inspiration of sorts for the next stage of games I will consider.
 
 # Starting People's Computing
 
