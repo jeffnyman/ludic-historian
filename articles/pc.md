@@ -284,3 +284,132 @@ pcc-v1-n5-may-1973-press.pdf
 It was the PCC newsletter that was the primary form of outreach for the group, and it's the one that lets us dig into some of the history. Undoubtedly, the People's Computer Company highlighted the crucial role of DEC, HP, and their minicomputer time-sharing systems in spreading computing and BASIC during the late 1960s and early 1970s.
 
 Consider, for example, how the EduSystem context was a "minicomputer." Personal computers weren't an option yet as none existed until 1975. That said, we do have to make allowances for what "personal computer" meant, distinguishing from one you could have at home versus one you could use "personally" in a classroom or other setting.
+
+## From the Mathematical to the Guessing Game
+
+In the December 1972 issue (volume 1, issue 2) of PCC, there are two programs worth considering: _Stars_ and _Bagels_.
+
+_Stars_ was stated to have been written for an EduSystem 20 on an HP 2000 and it’s essentially a guessing game. The issue asks: “Is there a strategy that will guarantee always guessing the number in at most 6 guesses?”
+
+the instructions are fairly simple:
+
+````
+I AM THINKING OF A WHOLE NUMBER FROM 1 TO 100
+TRY TO GUESS MY NUMBER. AFTER YOU GUESS, I
+WILL TYPE ONE OR MORE STARS (*). THE MORE
+STARS I TYPE, THE CLOSER YOU ARE TO MY NUMBER.
+ONE STAR (*) MEANS FAR AWAY, SEVEN STARS (*******)
+MEANS REALLY CLOSE! YOU GET 7 GUESSES.
+```
+
+You can see an example of one of my play sessions.
+
+```
+OK, I AM THINKING OF A NUMBER. START GUESSING.
+
+YOUR GUESS? 50
+*****
+
+YOUR GUESS? 40
+****
+
+YOUR GUESS? 60
+*****
+
+YOUR GUESS? 55
+*******
+````
+
+By default, the game is designed to pick a number between 1 and 100.
+
+You can see I was leveraging a bracketing strategy. I can see that I’m gaining more stars between 50 and 55 but I also have relatively few attempts left since the game limits you to seven guesses. I know the correct number must be somewhere between 50 and 55.
+
+```
+YOUR GUESS? 54
+**************************************************!!!
+YOU GOT IT IN 5 GUESSES!! LET'S PLAY AGAIN.
+```
+
+My first guess (50) got 5 stars, indicating I was close. Since I was close, I didn't need to completely eliminate half the range, like I would in a bisection strategy. A bisection strategy would be more aggressive, eliminating half the possibilities definitively with each guess, focusing on a smaller and smaller range. Bracketing keeps the range wider but refines it based on the "closeness" feedback I got from the count of stars I got per guess.
+
+The ludic experience is essentially that of a number guesser and thus not even as complex as _Hide and Seek_. The first-person "I" provides a hint of a narrative in that someone is engaging with you and giving you an indication of stars based on your guesses.
+
+You can check out the BASIC source for Stars.
+
+- stars.bas
+
+I have a DOSBox-based implementation that you can try out. It should work on either Mac or Windows.
+
+- stars-db
+
+The other game, _Bagels_, was actually introduced in the October 1972 issue, albeit without source code, and was stated to be part of the Lawrence Hall of Science Education Project, which was part of the University of California.
+
+The _Bagels_ game is more of a mathematical game in nature, specifically based on the “Pico, Fermi, Bagel” game, which is similar to a game like “Mastermind.” The idea is that the game picks some three digit number and you have to guess what it is. For each guess you make, the game responds with one of the following.
+
+- PICO - one digit is in the wrong place
+- FERMI - one digit is in the correct place
+- BAGELS - no digit is correct
+
+To show you a play session, one obvious choice to me seemed to be 100 so I tried that:
+
+```
+OKAY, I HAVE A NUMBER IN MIND.
+GUESS # 1 :? 100
+OH. I FORGOT TO TELL YOU THAT THE NUMBER I HAVE IN MIND HAS NO TWO DIGITS THE SAME.
+```
+
+Okay, good to know. So I start playing around:
+
+```
+GUESS # 1 :? 123
+             BAGELS
+GUESS # 2 :? 456
+             PICO FERMI
+```
+
+So the digits 1, 2, and 3 are not in the number. With 4, 5, and 6, I managed to get one digit in the correct place. Another one of my choices is the correct digit but it’s in the wrong place. So ideally, I guess, you want to find the one that’s in the right place first. I tried 423 and that gave me BAGELS. Since I know 2 and 3 are out, that would suggest 4 is as well. So I tried: 465 and that got me PICO PICO. So I knew this much:
+
+- 456: PICO FERMI
+- 465: PICO PICO
+
+So how about 546? Basically I ended up with a play session like this:
+
+```
+GUESS # 1 :? 123
+             BAGELS
+GUESS # 2 :? 456
+             PICO FERMI
+GUESS # 3 :? 423
+             BAGELS
+GUESS # 4 :? 465
+             PICO PICO
+GUESS # 5 :? 546
+             PICO PICO
+GUESS # 6 :? 564
+             PICO PICO
+GUESS # 7 :? 654
+             FERMI FERMI
+```
+
+So it looks like 65 is correct. That just leaves the last number. I know it can’t be 1, 2, or 3. And 4 is apparently out. It can’t be 5 because no two numbers can be alike. So it can’t be 6 either.
+
+```
+GUESS # 8 :? 657
+              FERMI FERMI
+GUESS # 9 :? 658
+              FERMI FERMI
+GUESS # 10 :? 659
+              FERMI FERMI
+GUESS # 11 :? 650
+YOU GOT IT
+```
+
+And there you go, victory! There are clearly better and worse strategies here but the main focus is making sure you keep context with what you’ve guessed before.
+
+You can check out the BASIC source for Bagels.
+
+- bagels.bas
+
+I have a DOSBox-based implementation that you can try out. It should work on either Mac or Windows.
+
+- bagels-db.zip
