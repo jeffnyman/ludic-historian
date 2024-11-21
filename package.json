@@ -1,0 +1,9 @@
+{
+  "name": "ludic-historian",
+  "description": "Web content for the Ludic Historian series.",
+  "author": "Jeff Nyman",
+  "license": "CC BY-SA 4.0",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module"
+}
