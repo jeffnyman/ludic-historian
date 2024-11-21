@@ -1,1 +1,5 @@
-console.log("Ludic Historian");
+import $ from "jquery";
+
+$(function () {
+  console.log("Ludic Historian");
+});
