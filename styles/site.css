@@ -8,3 +8,7 @@
   margin: unset;
   padding: unset;
 }
+
+html.js h1 {
+  display: none;
+}
